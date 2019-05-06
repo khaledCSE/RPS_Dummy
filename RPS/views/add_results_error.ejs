@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Result</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/login_page/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/login_page/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/login_page/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/login_page/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><b class="text-light">RPS</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/dashboard"><b class="text-light">Dashboard</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout"><b class="text-light">Logout</b></a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+    <!------------------------------------------------------------------->
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="/users/add_results" method="POST">
+					<span class="login100-form-title p-b-43">
+						Add Result
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Student ID is required">
+                        <b class="text-danger"><%= msg_std %></b>
+						<input class="input100" type="text" required name="username">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Student ID</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Course ID is required">
+                        <b class="text-danger"><%= msg_crs %></b>
+						<input class="input100" type="text" required name="course_id">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Course ID</span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Trimester ID is required">
+                        <b class="text-danger"><%= msg_tmr %></b>
+						<input class="input100" type="text" required name="trimester_id">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Trimester ID</span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Grade ID is required">
+						<input class="input100" type="text" required name="grade">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Grade</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">
+							Submit
+						</button>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url('/login_page/images/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+	
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/bootstrap/js/popper.js"></script>
+	<script src="/login_page/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/login_page/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/login_page/js/main.js"></script>
+
+</body>
+</html>

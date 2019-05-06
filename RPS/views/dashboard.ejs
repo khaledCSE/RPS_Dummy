@@ -1,0 +1,11 @@
+<% if(user.role == 'admin') { %>
+    <% include partials/admin_dashboard.ejs %>
+<% } %>
+
+<% if(user.role == 'teacher') { %>
+    <% include partials/teacher_dashboard.ejs %>
+<% } %>
+
+<% if(user.role == 'student') { %>
+    <% include partials/student_dashboard.ejs %>
+<% } %>
